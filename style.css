@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&display=swap');
+
+h1{
+    font-family: 'Blaka Hollow', cursive;
+    font-size: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+body{
+    padding: 0;
+    margin:0;
+    background-image: url("game.jpg");
+    background-repeat: no-repeat;
+}
+
+#play{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url("background.jpg");
+    overflow: hidden;
+
+}
+
+#obstacle{
+    width:50px;
+    height: 500px;
+    background-color: greenyellow;
+    position: relative;
+    left: 400px;
+    animation: obstacle 3s infinite linear;
+}
+
+@keyframes obstacle{
+    0%{left: 400px}
+    100%{left: -50px}
+}
+
+#entrance{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: obstacle 3s infinite linear;
+}
+
+#char{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
